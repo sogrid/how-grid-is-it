@@ -1,3 +1,47 @@
+footer {
+  position: fixed;
+  bottom: 10rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1ex 1em;
+  background-color: white;
+  color: #808080;
+  -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+}
+footer :link,
+footer :visited {
+  text-decoration: none;
+  color: inherit;
+}
+footer :link:hover,
+footer :visited:hover {
+  color: black;
+}
+footer span:nth-child(1) {
+  font-style: italic;
+  font-weight: 200;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(1px, rgba(128, 128, 128, 0.15)), to(transparent)), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-image: linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  -webkit-background-size: 100% 1rem, 1rem 100%;
+  background-size: 100% 1rem, 1rem 100%;
+  background-attachment: fixed;
+}
 main {
   width: 100%;
   position: relative;
@@ -100,50 +144,6 @@ main nav .semi-rigid-reading span:nth-child(1) {
 }
 main nav .semi-rigid-reading span:nth-child(2) {
   letter-spacing: 0.75ex;
-}
-footer {
-  position: fixed;
-  bottom: 10rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  padding: 1ex 1em;
-  background-color: white;
-  color: #808080;
-  -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
-  box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
-}
-footer :link,
-footer :visited {
-  text-decoration: none;
-  color: inherit;
-}
-footer :link:hover,
-footer :visited:hover {
-  color: black;
-}
-footer span:nth-child(1) {
-  font-style: italic;
-  font-weight: 200;
-}
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-body {
-  min-height: 100vh;
-  position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(1px, rgba(128, 128, 128, 0.15)), to(transparent)), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
-  background-image: -webkit-linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
-  background-image: linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
-  -webkit-background-size: 100% 1rem, 1rem 100%;
-  background-size: 100% 1rem, 1rem 100%;
-  background-attachment: fixed;
 }
 main nav {
   -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
