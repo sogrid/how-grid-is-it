@@ -1,0 +1,3 @@
+[submodule "semi-rigid-reading-grid"]
+	path = semi-rigid-reading-grid
+	url = https://github.com/sogrid/semi-rigid-reading-grid.git
