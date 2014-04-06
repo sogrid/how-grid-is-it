@@ -1,0 +1,31 @@
+//defaults
+@footer-color: gray;
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1ex 1em;
+  background-color: white;
+  color: @footer-color;
+  box-shadow: 0 0 0.1rem fade(@footer-color, 50%);
+
+  :link,
+  :visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  :link:hover,
+  :visited:hover {
+    color: black;
+  }
+
+  span:nth-child(1) {
+    font-style: italic;
+    font-weight: 200;
+  }
+}
