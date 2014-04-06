@@ -1,16 +1,12 @@
 ---
 title: How grid is it?
 ---
-<input type="checkbox" name="title-card" id="title-card">
 <nav>
     <ul>
         {{#each pages class="pages"}}<li class="{{dashify basename}}">{{#isnt ../page.dest dest}}
             <a href="{{relative ../../page.dest dest}}">{{{justify (default data.title basename)}}}</a>
         {{else}}
-            <label for="title-card">{{{justify (default data.title basename)}}}</label>
-            <section>
-                {{#with ../../project}}<a href="{{homepage}}">{{{justify name}}}</a>{{/with}}
-            </section>
+            {{{justify (default data.title basename)}}}
         {{/isnt}}</li>{{/each}}
     </ul>
 </nav>

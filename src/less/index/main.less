@@ -9,33 +9,6 @@ main {
   width: 100%;
   position: relative;
 
-  input[name=title-card] {
-    position: fixed;
-    z-index: -1;
-    top: 50%;
-    right: 100%;
-
-    ~ nav label[for=title-card] {
-      display: block;
-      cursor: pointer;
-
-      + section {
-        height: 0;
-        overflow: hidden;
-        font-size: .33em;
-        color: @sogrid-color;
-        opacity: 0;
-        transition: height 0.66s, opacity 0.33s ease;
-        text-align: center;
-      }
-    }
-
-    &:checked ~ nav label[for=title-card] + section {
-      height: 1em;
-      opacity: 1;
-    }
-  }
-
   nav {
     position: absolute;
     left: 50%;
@@ -79,27 +52,20 @@ main {
     }
 
     .index {
-      label {
-        span {
-          &:nth-child(1) {
-            letter-spacing: 1.8ex;
-          }
+      span {
+        &:nth-child(1) {
+          letter-spacing: 1.8ex;
+        }
 
-          &:nth-child(2) {
-            letter-spacing: 1.2ex;
-          }
+        &:nth-child(2) {
+          letter-spacing: 1.2ex;
+        }
 
-          &:nth-child(4) {
-            float: right
-          }
+        &:nth-child(4) {
+          float: right
         }
       }
-      section {
-        > span:nth-child(1), :link span:nth-child(2) {
-          font-weight: 400;
-          font-style: italic;
-        }
-      }
+
     }
 
     .semi-rigid-reading {

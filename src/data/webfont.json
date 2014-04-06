@@ -8,7 +8,7 @@
               { "weight": "200" },
               { "weight": "400" },
               { "weight": "700" },
-              { "weight": "400", "style": "italic" }
+              { "weight": "200", "style": "italic" }
           ]
       }]
   }
