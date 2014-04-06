@@ -17,7 +17,7 @@ main input[name=title-card] ~ nav label[for=title-card] + section {
   height: 0;
   overflow: hidden;
   font-size: .33em;
-  color: gray;
+  color: #808080;
   opacity: 0;
   -webkit-transition: height 0.66s, opacity 0.33s ease;
   transition: height 0.66s, opacity 0.33s ease;
@@ -43,6 +43,7 @@ main nav li {
 }
 main nav li {
   display: inline-block;
+  background-color: white;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -51,8 +52,8 @@ main nav li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 0.1rem rgba(255, 0, 255, 0.5);
-  box-shadow: 0 0 0.1rem rgba(255, 0, 255, 0.5);
+  -webkit-box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
   text-transform: uppercase;
   -webkit-transition: 0.33s all;
   transition: 0.33s all;
@@ -64,7 +65,7 @@ main nav li :link,
 main nav li :link:hover,
 main nav li :visited,
 main nav li :visited:hover {
-  color: gray;
+  color: #808080;
 }
 main nav li :link:hover,
 main nav li :visited:hover {
@@ -124,4 +125,9 @@ body {
 body {
   min-height: 100vh;
   position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(1px, rgba(128, 128, 128, 0.15)), to(transparent)), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-image: linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  -webkit-background-size: 100% 1rem, 1rem 100%;
+  background-size: 100% 1rem, 1rem 100%;
 }
