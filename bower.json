@@ -1,0 +1,20 @@
+{
+  "name": "how-grid-is-it",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sogrid/how-grid-is-it",
+  "authors": [
+    "tappily <tappily.b@gmail.com>"
+  ],
+  "main": "dist/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "loopless": "~2.0.0"
+  }
+}
