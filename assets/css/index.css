@@ -1,0 +1,127 @@
+main {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+main input[name=title-card] {
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  right: 100%;
+}
+main input[name=title-card] ~ nav label[for=title-card] {
+  display: block;
+  cursor: pointer;
+}
+main input[name=title-card] ~ nav label[for=title-card] + section {
+  height: 0;
+  overflow: hidden;
+  font-size: .33em;
+  color: gray;
+  opacity: 0;
+  -webkit-transition: height 0.66s, opacity 0.33s ease;
+  transition: height 0.66s, opacity 0.33s ease;
+  text-align: center;
+}
+main input[name=title-card]:checked ~ nav label[for=title-card] + section {
+  height: 1em;
+  opacity: 1;
+}
+main nav {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+main nav,
+main nav ul,
+main nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+main nav li {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 5em;
+  padding: 0.25em 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 0.1rem rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 0.1rem rgba(255, 0, 255, 0.5);
+  text-transform: uppercase;
+  -webkit-transition: 0.33s all;
+  transition: 0.33s all;
+}
+main nav li span {
+  display: inline-block;
+}
+main nav li :link,
+main nav li :link:hover,
+main nav li :visited,
+main nav li :visited:hover {
+  color: gray;
+}
+main nav li :link:hover,
+main nav li :visited:hover {
+  color: black;
+}
+@media only screen and (min-width: 20rem) and (min-height: 20rem) {
+  main nav li {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 30rem) and (min-height: 30rem) {
+  main nav li {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 40rem) and (min-height: 40rem) {
+  main nav li {
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 50rem) and (min-height: 50rem) {
+  main nav li {
+    font-size: 10rem;
+  }
+}
+@media only screen and (min-width: 60rem) and (min-height: 60rem) {
+  main nav li {
+    font-size: 12rem;
+  }
+}
+main nav .index label span:nth-child(1) {
+  letter-spacing: 1.8ex;
+}
+main nav .index label span:nth-child(2) {
+  letter-spacing: 1.2ex;
+}
+main nav .index label span:nth-child(4) {
+  float: right;
+}
+main nav .index section > span:nth-child(1),
+main nav .index section :link span:nth-child(2) {
+  font-weight: 400;
+  font-style: italic;
+}
+main nav .semi-rigid-reading span:nth-child(1) {
+  letter-spacing: 0.75ex;
+}
+main nav .semi-rigid-reading span:nth-child(2) {
+  letter-spacing: 0.75ex;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
