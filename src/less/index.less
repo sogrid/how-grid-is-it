@@ -1,29 +1,17 @@
 //imports
-@import "../../bower_components/loopless/dist/less/loop";
-@import "utility/wireframe";
+@import "site/default";
 @import "index/main";
-@import "index/footer";
+
 //defaults
-@sogrid-color: gray;
-@footer-color: @sogrid-color;
+@main-color: @default-color;
+@main-poster-bottom-gap: (@footer-height * 2);
+@main-poster-shadow: @default-shadow;
+@footer-color: @main-color;
 @footer-height: 10rem;
-@sogrid-poster-bottom-gap: (@footer-height * 2);
-@sogrid-poster-shadow: 0 0.1rem fade(@sogrid-color, 50%);;
-@footer-shadow: @sogrid-poster-shadow;
+@footer-shadow: @main-poster-shadow;
 
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  position: relative;
-  .wireframe-grid(1rem, fade(@sogrid-color, 15%));
-}
-
+//define
 main nav {
-  box-shadow: 0 0.1rem fade(@sogrid-color, 50%);
+  box-shadow: 0 0.1rem fade(@main-color, 50%);
 }
 

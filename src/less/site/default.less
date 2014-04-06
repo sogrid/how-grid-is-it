@@ -1,0 +1,25 @@
+//imports
+@import "../utility/wireframe";
+@import "footer";
+
+//defaults
+@default-color: gray;
+@default-font: 'Source Sans Pro', sans-serif;
+@default-shadow: 0 0.1rem fade(@default-color, 50%);
+@footer-color: @default-color;
+@footer-height: 10rem;
+@footer-shadow: @default-shadow;
+
+//define
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: @default-font;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  .wireframe-grid(1rem, fade(@default-color, 15%));
+}
+

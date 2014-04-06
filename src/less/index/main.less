@@ -1,11 +1,16 @@
-@sogrid-poster-size: (4rem * 0.5);
-@sogrid-color: magenta;
-@sogrid-poster-width: 4em;
-@sogrid-poster-padding: 0.5em;
-@sogrid-poster-bottom-gap: 0;
-@sogrid-poster-boxed-width: (@sogrid-poster-padding * 2 + @sogrid-poster-width);
-@sogrid-poster-shadow: none;
+//imports
+@import "../../../bower_components/loopless/dist/less/loop";
 
+//defaults
+@main-poster-size: (4rem * 0.5);
+@main-color: magenta;
+@main-poster-width: 4em;
+@main-poster-padding: 0.5em;
+@main-poster-bottom-gap: 0;
+@main-poster-boxed-width: (@main-poster-padding * 2 + @main-poster-width);
+@main-poster-shadow: none;
+
+//define
 main {
 
   &, nav, ul, li {
@@ -20,8 +25,8 @@ main {
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0 0 @sogrid-poster-bottom-gap;
-    box-shadow: @sogrid-poster-shadow;
+    margin: 0 0 @main-poster-bottom-gap;
+    box-shadow: @main-poster-shadow;
 
     ul, li {
       margin: 0;
@@ -30,11 +35,11 @@ main {
 
     li {
       background-color: white;
-      font-size: @sogrid-poster-size;
+      font-size: @main-poster-size;
       font-weight: 700;
       line-height: 1.2;
-      width: @sogrid-poster-boxed-width;
-      padding: (@sogrid-poster-padding * 0.5) @sogrid-poster-padding;
+      width: @main-poster-boxed-width;
+      padding: (@main-poster-padding * 0.5) @main-poster-padding;
       box-sizing: border-box;
       text-transform: uppercase;
       transition: 0.33s all;
@@ -47,7 +52,7 @@ main {
       :link:hover,
       :visited,
       :visited:hover {
-        color: @sogrid-color;
+        color: @main-color;
       }
 
       :link:hover,
@@ -93,8 +98,8 @@ main {
 
 
 .loop-over(@selector, @index, @to, @from) when(@selector='nav') {
-  @media only screen and (min-width: (@sogrid-poster-size * unit(@sogrid-poster-boxed-width * @index)))
-  and (min-height: (@sogrid-poster-size * unit(@sogrid-poster-boxed-width * @index))) {
-    font-size: (@sogrid-poster-size * (@index));
+  @media only screen and (min-width: (@main-poster-size * unit(@main-poster-boxed-width * @index)))
+  and (min-height: (@main-poster-size * unit(@main-poster-boxed-width * @index))) {
+    font-size: (@main-poster-size * (@index));
   }
 }

@@ -1,0 +1,12 @@
+//imports
+@import "../../semi-rigid-reading-grid/src/less/main";
+@import "site/default";
+
+main section[class*=" grid-flow"],
+main section[class^="grid-flow"] {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  margin-bottom: (@footer-height * 2);
+  box-shadow: @default-shadow;
+}
