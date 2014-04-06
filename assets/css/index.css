@@ -13,12 +13,11 @@ main nav {
 main nav,
 main nav ul,
 main nav li {
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
 }
 main nav li {
-  display: inline-block;
   background-color: white;
   font-size: 2rem;
   font-weight: 700;
@@ -98,6 +97,7 @@ footer {
   text-transform: uppercase;
   padding: 1ex 1em;
   background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #808080;
   -webkit-box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
   box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
