@@ -1,6 +1,7 @@
 //defaults
 @footer-color: gray;
 @footer-height: 5rem;
+@footer-shadow: none;
 
 footer {
   position: fixed;
@@ -12,7 +13,7 @@ footer {
   padding: 1ex 1em;
   background-color: white;
   color: @footer-color;
-  box-shadow: 0 0 0.1rem fade(@footer-color, 50%);
+  box-shadow: @footer-shadow;
 
   :link,
   :visited {

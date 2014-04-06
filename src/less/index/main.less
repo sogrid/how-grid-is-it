@@ -4,6 +4,7 @@
 @sogrid-poster-padding: 0.5em;
 @sogrid-poster-bottom-gap: 0;
 @sogrid-poster-boxed-width: (@sogrid-poster-padding * 2 + @sogrid-poster-width);
+@sogrid-poster-shadow: none;
 
 main {
 
@@ -20,6 +21,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     margin: 0 0 @sogrid-poster-bottom-gap;
+    box-shadow: @sogrid-poster-shadow;
 
     ul, li {
       margin: 0;
@@ -34,7 +36,6 @@ main {
       width: @sogrid-poster-boxed-width;
       padding: (@sogrid-poster-padding * 0.5) @sogrid-poster-padding;
       box-sizing: border-box;
-      box-shadow: 0 0 0.1rem fade(@sogrid-color, 50%);
       text-transform: uppercase;
       transition: 0.33s all;
 

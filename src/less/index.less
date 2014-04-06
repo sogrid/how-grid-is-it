@@ -8,6 +8,8 @@
 @footer-color: @sogrid-color;
 @footer-height: 10rem;
 @sogrid-poster-bottom-gap: (@footer-height * 2);
+@sogrid-poster-shadow: 0 0.1rem fade(@sogrid-color, 50%);;
+@footer-shadow: @sogrid-poster-shadow;
 
 html, body {
   padding: 0;
@@ -19,5 +21,9 @@ body {
   min-height: 100vh;
   position: relative;
   .wireframe-grid(1rem, fade(@sogrid-color, 15%));
+}
+
+main nav {
+  box-shadow: 0 0.1rem fade(@sogrid-color, 50%);
 }
 
