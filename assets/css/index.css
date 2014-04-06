@@ -16,6 +16,8 @@ main nav {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: 0 0 20rem;
+  -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
 }
 main nav ul,
 main nav li {
@@ -32,8 +34,6 @@ main nav li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
-  box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
   text-transform: uppercase;
   -webkit-transition: 0.33s all;
   transition: 0.33s all;
@@ -113,8 +113,8 @@ footer {
   padding: 1ex 1em;
   background-color: white;
   color: #808080;
-  -webkit-box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
-  box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
+  -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
 }
 footer :link,
 footer :visited {
@@ -144,4 +144,8 @@ body {
   -webkit-background-size: 100% 1rem, 1rem 100%;
   background-size: 100% 1rem, 1rem 100%;
   background-attachment: fixed;
+}
+main nav {
+  -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
 }
