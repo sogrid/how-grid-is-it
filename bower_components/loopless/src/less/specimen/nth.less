@@ -1,0 +1,21 @@
+@import '../loop';
+
+//overlay
+.loop-in(@selector, @index, @from, @to) when (@selector = 'body') {
+  &:nth-child(@{index}) {
+    z-index: (@index - @from);
+  }
+}
+
+.loop-over(@selector, @index, @from, @to) when (@selector = 'body') {
+  &:nth-child(@{index}) {
+    text-decoration: underline;
+  }
+}
+
+.loop(in, 'body', 0, 5);
+
+body{
+  .loop(over, 'body', 4, 5);
+}
+

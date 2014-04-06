@@ -1,0 +1,8 @@
+{
+    "project": {
+        "name": "So grid",
+        "homepage": "<%= bower.homepage %>"
+    },
+    "styles": ["index.css"],
+    "scripts": []
+}

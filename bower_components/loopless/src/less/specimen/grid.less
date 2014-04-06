@@ -1,0 +1,25 @@
+@import '../loop';
+
+.grid-span(@index, @total) {
+  width: round((100% / @total * @index),2);
+}
+
+// nested grid spans
+
+.loop-over(@selector, @index, @from, @to) when (@selector = '.grid-span') {
+  .grid-span-@{index} {
+    .grid-span(@index, @to);
+  }
+}
+
+// grid spans
+
+.loop-in(@selector, @index, @from, @to) when (@selector = '.grid-span') {
+  &-@{index} {
+    z-index:(@index - @from + 1);
+    .grid-span(@index, @to);
+    .loop(over, @selector, 1, (@index - @from + 1));
+  }
+}
+
+.loop(in, '.grid-span', 1, 12);

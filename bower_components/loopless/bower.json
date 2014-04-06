@@ -1,0 +1,23 @@
+{
+  "name": "loopless",
+  "version": "2.0.0",
+  "main": "dist/less/loop.less",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/tappily/loopless",
+  "authors": [
+    "tappily"
+  ],
+  "description": "Encapsulated loop function for LESS",
+  "keywords": [
+    "LESS",
+    "loop",
+    "CSS"
+  ],
+  "license": "MIT"
+}

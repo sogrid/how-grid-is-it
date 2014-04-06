@@ -1,0 +1,15 @@
+{
+  "google": {
+      "host": "fonts.googleapis.com",
+      "id": "",
+      "faces": [{
+          "family": "Source Sans Pro",
+          "styles": [
+              { "weight": "200" },
+              { "weight": "400" },
+              { "weight": "700" },
+              { "weight": "400", "style": "italic" }
+          ]
+      }]
+  }
+}

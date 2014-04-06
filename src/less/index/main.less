@@ -1,0 +1,125 @@
+@sogrid-poster-size: (4rem * 0.5);
+@sogrid-poster-width: 4em;
+@sogrid-poster-padding: 0.5em;
+@sogrid-poster-boxed-width: (@sogrid-poster-padding * 2 + @sogrid-poster-width);
+
+main {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  input[name=title-card] {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    right: 100%;
+
+    ~ nav label[for=title-card] {
+      display: block;
+      cursor: pointer;
+
+      + section {
+        height: 0;
+        overflow: hidden;
+        font-size: .33em;
+        color: gray;
+        opacity: 0;
+        transition: height 0.66s, opacity 0.33s ease;
+        text-align: center;
+      }
+    }
+
+    &:checked ~ nav label[for=title-card] + section {
+      height: 1em;
+      opacity: 1;
+    }
+  }
+
+  nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    &, ul, li {
+      display: inline-block;
+      margin: 0;
+      padding:0;
+    }
+
+    li {
+      display: inline-block;
+      font-size: @sogrid-poster-size;
+      font-weight: 700;
+      line-height: 1.2;
+      width: @sogrid-poster-boxed-width;
+      padding: (@sogrid-poster-padding * 0.5) @sogrid-poster-padding;
+      box-sizing: border-box;
+      box-shadow: 0 0 0.1rem fade(magenta, 50%);
+      text-transform: uppercase;
+      transition: 0.33s all;
+
+      span {
+        display: inline-block;
+      }
+
+      :link,
+      :link:hover,
+      :visited,
+      :visited:hover {
+        color: gray;
+      }
+
+      :link:hover,
+      :visited:hover {
+        color: black;
+      }
+
+      .loop(over, 'nav', 2, 6);
+    }
+
+    .index {
+      label {
+        span {
+          &:nth-child(1) {
+            letter-spacing: 1.8ex;
+          }
+
+          &:nth-child(2) {
+            letter-spacing: 1.2ex;
+          }
+
+          &:nth-child(4) {
+            float: right
+          }
+        }
+      }
+      section {
+        > span:nth-child(1), :link span:nth-child(2) {
+          font-weight: 400;
+          font-style: italic;
+        }
+      }
+    }
+
+    .semi-rigid-reading {
+      span {
+        &:nth-child(1) {
+          letter-spacing: 0.75ex;
+        }
+
+        &:nth-child(2) {
+          letter-spacing: 0.75ex;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+.loop-over(@selector, @index, @to, @from) when(@selector='nav') {
+  @media only screen and (min-width: (@sogrid-poster-size * unit(@sogrid-poster-boxed-width * @index)))
+  and (min-height: (@sogrid-poster-size * unit(@sogrid-poster-boxed-width * @index))) {
+    font-size: (@sogrid-poster-size * (@index));
+  }
+}

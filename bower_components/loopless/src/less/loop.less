@@ -1,0 +1,36 @@
+.loop(@selector, @from, @to) {
+  .loop(in, @selector, @from, @to);
+}
+
+.loop(@route, @selector, @from, @to) {
+  @f: floor(@from);
+  @t: floor(@to);
+  @i: @f;
+
+  .loop(@i) when (@i=<@t) {
+    .loop-route(@route, @selector, @i, @f, @t);
+    .loop((@i + 1));
+  }
+
+  .loop(@t) {}
+  .loop(@f);
+}
+
+.loop-route(@route, @selector, @i, @f, @t) when(@route = over) {
+  & {
+    .loop-over(@selector, @i, @f, @t);
+  }
+}
+
+.loop-route(@route, @selector, @i, @f, @t) when(@route = in) {
+  @s: e(@selector);
+  @{s} {
+    .loop-in(@selector, @i, @f, @t);
+  }
+}
+
+.loop-in(@selector, @index, @from, @to) {
+}
+
+.loop-over(@selector, @index, @from, @to) {
+}
