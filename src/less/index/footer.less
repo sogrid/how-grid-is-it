@@ -1,16 +1,16 @@
 //defaults
 @footer-color: gray;
+@footer-height: 5rem;
 
 footer {
   position: fixed;
-  bottom: 0;
+  bottom: @footer-height;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1ex 1em;
   background-color: white;
-  background-color: fade(white, 50%);
   color: @footer-color;
   box-shadow: 0 0 0.1rem fade(@footer-color, 50%);
 

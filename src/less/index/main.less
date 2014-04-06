@@ -2,19 +2,26 @@
 @sogrid-color: magenta;
 @sogrid-poster-width: 4em;
 @sogrid-poster-padding: 0.5em;
+@sogrid-poster-bottom-gap: 0;
 @sogrid-poster-boxed-width: (@sogrid-poster-padding * 2 + @sogrid-poster-width);
 
 main {
-  display: block;
+
+  &, nav, ul, li {
+    display: block;
+  }
+
   width: 100%;
   position: relative;
 
   nav {
     position: absolute;
+    z-index: 1;
     left: 50%;
     transform: translateX(-50%);
-    &, ul, li {
-      display: block;
+    margin: 0 0 @sogrid-poster-bottom-gap;
+
+    ul, li {
       margin: 0;
       padding:0;
     }
