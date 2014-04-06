@@ -71,6 +71,16 @@ main nav li :visited:hover {
     font-size: 12rem;
   }
 }
+@media only screen and (min-width: 70rem) and (min-height: 70rem) {
+  main nav li {
+    font-size: 14rem;
+  }
+}
+@media only screen and (min-width: 80rem) and (min-height: 80rem) {
+  main nav li {
+    font-size: 16rem;
+  }
+}
 main nav .index span:nth-child(1) {
   letter-spacing: 1.8ex;
 }
