@@ -3,30 +3,6 @@ main {
   width: 100%;
   position: relative;
 }
-main input[name=title-card] {
-  position: fixed;
-  z-index: -1;
-  top: 50%;
-  right: 100%;
-}
-main input[name=title-card] ~ nav label[for=title-card] {
-  display: block;
-  cursor: pointer;
-}
-main input[name=title-card] ~ nav label[for=title-card] + section {
-  height: 0;
-  overflow: hidden;
-  font-size: .33em;
-  color: #808080;
-  opacity: 0;
-  -webkit-transition: height 0.66s, opacity 0.33s ease;
-  transition: height 0.66s, opacity 0.33s ease;
-  text-align: center;
-}
-main input[name=title-card]:checked ~ nav label[for=title-card] + section {
-  height: 1em;
-  opacity: 1;
-}
 main nav {
   position: absolute;
   left: 50%;
@@ -96,25 +72,48 @@ main nav li :visited:hover {
     font-size: 12rem;
   }
 }
-main nav .index label span:nth-child(1) {
+main nav .index span:nth-child(1) {
   letter-spacing: 1.8ex;
 }
-main nav .index label span:nth-child(2) {
+main nav .index span:nth-child(2) {
   letter-spacing: 1.2ex;
 }
-main nav .index label span:nth-child(4) {
+main nav .index span:nth-child(4) {
   float: right;
-}
-main nav .index section > span:nth-child(1),
-main nav .index section :link span:nth-child(2) {
-  font-weight: 400;
-  font-style: italic;
 }
 main nav .semi-rigid-reading span:nth-child(1) {
   letter-spacing: 0.75ex;
 }
 main nav .semi-rigid-reading span:nth-child(2) {
   letter-spacing: 0.75ex;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1ex 1em;
+  background-color: white;
+  color: #808080;
+  -webkit-box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 0.1rem rgba(128, 128, 128, 0.5);
+}
+footer :link,
+footer :visited {
+  text-decoration: none;
+  color: inherit;
+}
+footer :link:hover,
+footer :visited:hover {
+  color: black;
+}
+footer span:nth-child(1) {
+  font-style: italic;
+  font-weight: 200;
 }
 html,
 body {
