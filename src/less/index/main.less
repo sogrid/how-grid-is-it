@@ -1,4 +1,5 @@
 @sogrid-poster-size: (4rem * 0.5);
+@sogrid-color: magenta;
 @sogrid-poster-width: 4em;
 @sogrid-poster-padding: 0.5em;
 @sogrid-poster-boxed-width: (@sogrid-poster-padding * 2 + @sogrid-poster-width);
@@ -22,7 +23,7 @@ main {
         height: 0;
         overflow: hidden;
         font-size: .33em;
-        color: gray;
+        color: @sogrid-color;
         opacity: 0;
         transition: height 0.66s, opacity 0.33s ease;
         text-align: center;
@@ -47,13 +48,14 @@ main {
 
     li {
       display: inline-block;
+      background-color: white;
       font-size: @sogrid-poster-size;
       font-weight: 700;
       line-height: 1.2;
       width: @sogrid-poster-boxed-width;
       padding: (@sogrid-poster-padding * 0.5) @sogrid-poster-padding;
       box-sizing: border-box;
-      box-shadow: 0 0 0.1rem fade(magenta, 50%);
+      box-shadow: 0 0 0.1rem fade(@sogrid-color, 50%);
       text-transform: uppercase;
       transition: 0.33s all;
 
@@ -65,7 +67,7 @@ main {
       :link:hover,
       :visited,
       :visited:hover {
-        color: gray;
+        color: @sogrid-color;
       }
 
       :link:hover,
