@@ -1,13 +1,16 @@
 //imports
 @import "../utility/wireframe";
-@import "footer";
 
 //defaults
 @default-color: gray;
 @default-font: 'Source Sans Pro', sans-serif;
 @default-shadow: 0 0.1rem fade(@default-color, 50%);
+@header-color: mix(@default-color, white, 25%);
 @footer-color: @default-color;
 @footer-height: 10rem;
+@footer-shadow: @default-shadow;
+@footer-color: gray;
+@footer-height: 5rem;
 @footer-shadow: @default-shadow;
 
 //define
@@ -18,8 +21,57 @@ html, body {
 }
 
 body {
+  background-color: white;
+  color: contrast(white);
   min-height: 100vh;
   position: relative;
   .wireframe-grid(1rem, fade(@default-color, 15%));
 }
 
+header, footer {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1ex 1em;
+  background-color: inherit;
+  position: fixed;
+  box-shadow: @footer-shadow;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+header {
+  top: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+footer {
+  color: @footer-color;
+  bottom: @footer-height;
+
+  :link,
+  :visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  :link:hover,
+  :visited:hover {
+    color: black;
+  }
+
+  span:nth-child(1) {
+    font-style: italic;
+    font-weight: 200;
+  }
+}
