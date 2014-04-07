@@ -3,10 +3,11 @@ title: How grid is it?
 ---
 <nav>
     <ul>
-        {{#each pages class="pages"}}<li class="{{dashify basename}}">{{#isnt ../page.dest dest}}
+        {{#each pages}}{{#is ../page.dest dest}}<li class="{{dashify basename}}">
+            {{{justify (default data.title basename)}}}</li>
+        {{/is}}{{/each}}
+        {{#each pages}}{{#isnt ../page.dest dest}}<li class="{{dashify basename}}">
             <a href="{{relative ../../page.dest dest}}">{{{justify (default data.title basename)}}}</a>
-        {{else}}
-            {{{justify (default data.title basename)}}}
-        {{/isnt}}</li>{{/each}}
+        </li>{{/isnt}}{{/each}}
     </ul>
 </nav>
