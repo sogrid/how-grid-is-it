@@ -164,6 +164,12 @@ main nav .semi-rigid-reading span:nth-child(1) {
 main nav .semi-rigid-reading span:nth-child(2) {
   letter-spacing: 0.75ex;
 }
+main nav .simple-reflex-reading span:nth-child(1) {
+  letter-spacing: 0.28ex;
+}
+main nav .simple-reflex-reading span:nth-child(2) {
+  letter-spacing: 0.25ex;
+}
 main nav {
   -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
   box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);

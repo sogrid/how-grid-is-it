@@ -1,0 +1,105 @@
+article {
+  -webkit-column-width: 22em;
+  -moz-column-width: 22em;
+  column-width: 22em;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4em;
+  overflow: auto;
+}
+article section {
+  -webkit-column-break-before: always;
+  -webkit-break-before: column;
+  -moz-break-before: column;
+  break-before: column;
+}
+article dl,
+article ul,
+article ol {
+  display: inline-block;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  background-color: white;
+  color: #000000;
+  min-height: 100vh;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(1px, rgba(128, 128, 128, 0.15)), to(transparent)), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-image: linear-gradient(0, rgba(128, 128, 128, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  -webkit-background-size: 100% 1rem, 1rem 100%;
+  background-size: 100% 1rem, 1rem 100%;
+  background-attachment: fixed;
+}
+header,
+footer {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1ex 1em;
+  background-color: inherit;
+  position: fixed;
+  -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+header {
+  top: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+footer {
+  color: #808080;
+  bottom: 0.5rem;
+}
+footer :link,
+footer :visited {
+  text-decoration: none;
+  color: inherit;
+}
+footer :link:hover,
+footer :visited:hover {
+  color: black;
+}
+footer span:nth-child(1) {
+  font-style: italic;
+  font-weight: 200;
+}
+article section {
+  background-color: white;
+}
+figure {
+  font-size: 8rem;
+  line-height: 4em;
+  margin: 0.66rem 0;
+  color: #808080;
+  color: rgba(128, 128, 128, 0.15);
+  padding: 0;
+  text-align: center;
+  background-color: white;
+  background-image: -webkit-linear-gradient(135deg, transparent 45%, rgba(128, 128, 128, 0.15) 45%, rgba(128, 128, 128, 0.15) 55%, transparent 55%), -webkit-linear-gradient(45deg, transparent 45%, rgba(128, 128, 128, 0.15) 45%, rgba(128, 128, 128, 0.15) 55%, transparent 55%);
+  background-image: linear-gradient(-45deg, transparent 45%, rgba(128, 128, 128, 0.15) 45%, rgba(128, 128, 128, 0.15) 55%, transparent 55%), linear-gradient(45deg, transparent 45%, rgba(128, 128, 128, 0.15) 45%, rgba(128, 128, 128, 0.15) 55%, transparent 55%);
+  -webkit-background-size: .1em .1em;
+  background-size: .1em .1em;
+}

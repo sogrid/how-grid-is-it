@@ -13,6 +13,7 @@
   box-sizing: border-box;
   width: 19rem;
   float: left;
+  margin: 0;
 }
 .grid-flow-col--br {
   margin-left: 0;
@@ -188,7 +189,7 @@ header {
 }
 footer {
   color: #808080;
-  bottom: 5rem;
+  bottom: 0.5rem;
 }
 footer :link,
 footer :visited {
@@ -208,8 +209,8 @@ main section[class^="grid-flow"] {
   background-color: white;
   position: relative;
   z-index: 1;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
   box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
 }
