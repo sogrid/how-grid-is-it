@@ -1,6 +1,6 @@
 [submodule "semi-rigid-reading-grid"]
 	path = semi-rigid-reading
 	url = https://github.com/sogrid/semi-rigid-reading-grid.git
-[submodule "simple-reflex-reading"]
+[submodule "unbound-book-scroll"]
 	path = unbound-book-scroll
-	url = https://github.com/sogrid/simple-reflex-reading.git
+	url = https://github.com/sogrid/unbound-book-scroll.git
