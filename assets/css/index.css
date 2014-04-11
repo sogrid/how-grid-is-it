@@ -158,17 +158,18 @@ main nav .index span:nth-child(2) {
 main nav .index span:nth-child(4) {
   float: right;
 }
-main nav .semi-rigid-reading span:nth-child(1) {
-  letter-spacing: 0.75ex;
-}
+main nav .semi-rigid-reading span:nth-child(1),
 main nav .semi-rigid-reading span:nth-child(2) {
   letter-spacing: 0.75ex;
 }
-main nav .simple-reflex-reading span:nth-child(1) {
-  letter-spacing: 0.28ex;
+main nav .unroll-scroll-book span:nth-child(1) {
+  letter-spacing: 0.11ex;
 }
-main nav .simple-reflex-reading span:nth-child(2) {
-  letter-spacing: 0.25ex;
+main nav .unroll-scroll-book span:nth-child(2) {
+  letter-spacing: 0.19ex;
+}
+main nav .unroll-scroll-book span:nth-child(3) {
+  letter-spacing: 0.9ex;
 }
 main nav {
   -webkit-box-shadow: 0 0.1rem rgba(128, 128, 128, 0.5);
