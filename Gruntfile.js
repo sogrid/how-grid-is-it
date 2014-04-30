@@ -126,7 +126,7 @@ module.exports = function(grunt) {
                 tasks: ['jshint', 'assemble']
             },
             less: {
-                files: '**/*.less',
+                files: 'src/**/*.less',
                 tasks: ['less', 'autoprefixer:site', 'csslint:site']
             },
             template: {
